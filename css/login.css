@@ -1,0 +1,409 @@
+:root {
+    --cream: #FBF3E4;
+    --cream-deep: #F3E4C8;
+    --sand-line: #EEDFC9;
+    --clay: #B5562D;
+    --clay-dark: #8C4322;
+    --brown: #5A3825;
+    --brown-deep: #3E2417;
+    --ink: #2E1B12;
+    --gold: #C99A3D;
+    --muted: #8A7563;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    min-height: 100vh;
+    background: var(--cream);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ---------- decorative linear Indian art layer ---------- */
+.scene {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.motif {
+    position: absolute;
+    opacity: .85;
+}
+
+.motif.top-divider {
+    top: 88px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(640px, 80%);
+}
+
+.motif.corner-mandala {
+    bottom: -6px;
+    left: -6px;
+    width: 230px;
+    opacity: .8;
+}
+
+.motif.flourish-wave {
+    bottom: 26px;
+    right: 0;
+    width: 340px;
+    opacity: .75;
+}
+
+/* ---------- top nav ---------- */
+header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 40px;
+    border-bottom: 1px solid var(--sand-line);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo svg {
+    width: 26px;
+    height: 26px;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    color: var(--brown-deep);
+}
+
+.back-link {
+    font-size: 12.5px;
+    color: var(--muted);
+    text-decoration: none;
+    border: 1px solid var(--sand-line);
+    padding: 7px 14px;
+    border-radius: 999px;
+    transition: border-color .15s, color .15s;
+    background: #fff;
+}
+
+.back-link:hover {
+    border-color: var(--clay);
+    color: var(--clay-dark);
+}
+
+/* ---------- main ---------- */
+main {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 20px 60px;
+    text-align: center;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.divider .line {
+    width: 52px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold));
+}
+
+.divider .line.r {
+    background: linear-gradient(90deg, var(--gold), transparent);
+}
+
+.divider svg {
+    width: 18px;
+    height: 18px;
+    color: var(--clay);
+}
+
+.eyebrow {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--brown);
+    margin: 0 0 2px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #8C4322, #5A3825);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 2px 0 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--muted);
+    max-width: 380px;
+    line-height: 1.6;
+    margin: 0 auto 28px;
+}
+
+/* ---------- card ---------- */
+.card {
+    width: 100%;
+    max-width: 380px;
+    background: #fff;
+    border: 1px solid var(--sand-line);
+    border-radius: 18px;
+    padding: 26px;
+    box-shadow: 0 30px 60px -34px rgba(90, 56, 37, .35);
+    text-align: left;
+}
+
+.role-toggle {
+    display: flex;
+    background: var(--cream-deep);
+    border: 1px solid var(--sand-line);
+    border-radius: 13px;
+    padding: 4px;
+    margin-bottom: 22px;
+}
+
+.role-btn {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px 8px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    transition: background .15s, color .15s;
+}
+
+.role-btn svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+.role-btn.active {
+    background: var(--clay);
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    color: var(--brown-deep);
+}
+
+.role-desc {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 0 0 18px;
+    line-height: 1.5;
+}
+
+.field {
+    margin-bottom: 13px;
+}
+
+.field label {
+    display: block;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--clay-dark);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.field input {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid var(--sand-line);
+    border-radius: 10px;
+    font-size: 13.5px;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    outline: none;
+    transition: border-color .15s;
+}
+
+.field input:focus {
+    border-color: var(--clay);
+}
+
+.field input::placeholder {
+    color: #B7A28C;
+}
+
+.row-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px 0 20px;
+    font-size: 11.5px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--muted);
+}
+
+.remember input {
+    accent-color: var(--clay);
+}
+
+.forgot {
+    color: var(--clay-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    background: var(--brown-deep);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: background .15s;
+    letter-spacing: .3px;
+}
+
+.submit-btn:hover {
+    background: var(--clay-dark);
+}
+
+.card-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 18px 0;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.card-divider::before,
+.card-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--sand-line);
+}
+
+.alt-role {
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.alt-role button {
+    border: none;
+    background: none;
+    color: var(--clay-dark);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0;
+}
+
+.foot-note {
+    margin-top: 26px;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: .3px;
+}
+
+.foot-note a {
+    color: var(--clay-dark);
+    text-decoration: none;
+}
+
+/* Shown when the visitor was sent here by the marketplace checkout gate. */
+.return-note {
+    margin-top: 14px;
+    padding: 10px 14px;
+    border: 1px solid var(--sand-line);
+    border-radius: 10px;
+    background: var(--sand);
+    color: var(--brown);
+    font-size: 12px;
+    text-align: center;
+}
+
+.return-note[hidden] {
+    display: none;
+}
+
+.panel {
+    display: none;
+}
+
+.panel.active {
+    display: block;
+}
+
+@media (max-width:600px) {
+    header {
+        padding: 16px 20px;
+    }
+
+    h1 {
+        font-size: 38px;
+        letter-spacing: 3px;
+    }
+
+    main {
+        padding: 32px 16px 50px;
+    }
+
+    .motif.warli-left,
+    .motif.paisley-right {
+        display: none;
+    }
+}
