@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIRASYA | Punjab</title>
+  <meta name="description"
+    content="VIRASYA — Explore Punjab's history, heritage, places, culture, art, festivals and cuisine.">
+  <link rel="stylesheet" href="punjab.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">❧</span>
+      <span class="brand-name">VIRASYA</span>
+      <span class="divider"></span>
+      <span class="brand-tag">Digital Gateway to India's Heritage</span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#explore" class="nav-link">Discover Punjab</a>
+      <a href="#places" class="nav-link">Places</a>
+      <a href="#culture" class="nav-link">Culture</a>
+      <a href="#art" class="nav-link">Art</a>
+      <a href="#cuisine" class="nav-link">Cuisine</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">DISCOVER INDIA • PUNJAB</p>
+        <h1>PUNJAB</h1>
+        <h2>Land of Five Rivers</h2>
+        <p class="hero-text">
+          A land of courage, devotion, celebration and timeless traditions —
+          from the Golden Temple to the fields of Punjab.
+        </p>
+        <div class="hero-tags">
+          <span>✦ Golden Temple</span>
+          <span>✦ Baisakhi</span>
+          <span>✦ Bhangra</span>
+          <span>✦ Phulkari</span>
+        </div>
+        <a class="gold-btn" href="#explore">Explore Punjab <span>→</span></a>
+      </div>
+      <div class="scroll-hint">⌄<br><span>Scroll to explore</span></div>
+    </section>
+
+    <section class="intro" id="explore">
+      <div class="section-heading">
+        <span class="eyebrow">THE LAND & ITS STORY</span>
+        <h2>Punjab at a Glance</h2>
+        <p>Explore the identity of Punjab through its history, heritage and living traditions.</p>
+      </div>
+
+      <div class="intro-grid">
+        <article class="intro-main">
+          <span class="mini-label">OVERVIEW</span>
+          <h3>Where history lives through tradition.</h3>
+          <p>
+            Punjab, meaning “land of five rivers”, is known for its rich historical
+            legacy, Sikh heritage, vibrant folk traditions, agricultural landscape,
+            craftsmanship and distinctive cuisine.
+          </p>
+          <p>
+            Its cities and heritage sites tell stories of empires, freedom movements,
+            spiritual traditions and community life.
+          </p>
+        </article>
+
+        <div class="fact-grid">
+          <div class="fact"><b>5</b><span>Rivers of the historic Punjab</span></div>
+          <div class="fact"><b>Amritsar</b><span>Spiritual & cultural centre</span></div>
+          <div class="fact"><b>Patiala</b><span>Royal heritage</span></div>
+          <div class="fact"><b>Baisakhi</b><span>Harvest & cultural festival</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="places-section" id="places">
+      <div class="section-heading left">
+        <span class="eyebrow">EXPLORE THE LAND</span>
+        <h2>Places of Punjab</h2>
+        <p>Search, filter and open any place to learn more.</p>
+      </div>
+
+      <div class="place-tools">
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="placeSearch" type="search" placeholder="Search a place, city or heritage site...">
+        </label>
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="spiritual">Spiritual</button>
+          <button class="filter" data-filter="history">Historical</button>
+          <button class="filter" data-filter="culture">Culture</button>
+          <button class="filter" data-filter="museum">Museums</button>
+        </div>
+      </div>
+
+      <div class="place-grid" id="placeGrid"></div>
+      <p class="no-results" id="noResults">No places found. Try another search.</p>
+    </section>
+
+    <section class="culture-section" id="culture">
+      <div class="section-heading">
+        <span class="eyebrow">THE SPIRIT OF PUNJAB</span>
+        <h2>Culture & Traditions</h2>
+        <p>Living traditions that make Punjab instantly recognisable.</p>
+      </div>
+
+      <div class="culture-grid">
+        <article class="culture-card">
+          <div class="culture-icon">🥁</div>
+          <h3>Bhangra</h3>
+          <p>Energetic folk dance closely associated with Punjab and harvest celebrations.</p>
+        </article>
+        <article class="culture-card">
+          <div class="culture-icon">💃</div>
+          <h3>Giddha</h3>
+          <p>A lively women's folk dance expressed through singing, clapping and gestures.</p>
+        </article>
+        <article class="culture-card">
+          <div class="culture-icon">🍲</div>
+          <h3>Langar</h3>
+          <p>A community kitchen tradition built around equality, service and sharing food.</p>
+        </article>
+        <article class="culture-card">
+          <div class="culture-icon">🎵</div>
+          <h3>Folk Music</h3>
+          <p>Dhol, tumbi, algoza and traditional singing keep Punjab's musical heritage alive.</p>
+        </article>
+        <article class="culture-card">
+          <div class="culture-icon">🌾</div>
+          <h3>Harvest</h3>
+          <p>Baisakhi celebrates the harvest and has deep cultural and historical importance.</p>
+        </article>
+        <article class="culture-card">
+          <div class="culture-icon">🛕</div>
+          <h3>Sikh Heritage</h3>
+          <p>Gurdwaras, community service and sacred traditions are central to Punjab's identity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="art-section" id="art">
+      <div class="section-heading left">
+        <span class="eyebrow">CREATIVE HERITAGE</span>
+        <h2>Art & Craft</h2>
+        <p>Traditional skills passed through generations.</p>
+      </div>
+
+      <div class="art-grid">
+        <article class="art-card">
+          <div class="art-symbol">✿</div>
+          <div>
+            <h3>Phulkari</h3>
+            <p>Decorative embroidery known for colourful floral motifs and detailed handwork.</p>
+          </div>
+        </article>
+        <article class="art-card">
+          <div class="art-symbol">◈</div>
+          <div>
+            <h3>Punjabi Jutti</h3>
+            <p>Handcrafted footwear often decorated with embroidery and traditional ornamentation.</p>
+          </div>
+        </article>
+        <article class="art-card">
+          <div class="art-symbol">✦</div>
+          <div>
+            <h3>Traditional Crafts</h3>
+            <p>Textiles, woodwork, metalwork and decorative crafts form part of Punjab's material culture.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cuisine-section" id="cuisine">
+      <div class="section-heading">
+        <span class="eyebrow">TASTE OF PUNJAB</span>
+        <h2>Punjabi Cuisine</h2>
+        <p>Bold flavours, comforting meals and food traditions made for sharing.</p>
+      </div>
+
+      <div class="food-grid">
+        <article class="food-card"><span>01</span>
+          <h3>Sarson da Saag</h3>
+          <p>Mustard greens traditionally enjoyed with makki di roti.</p>
+        </article>
+        <article class="food-card"><span>02</span>
+          <h3>Makki di Roti</h3>
+          <p>A traditional cornmeal flatbread often paired with saag.</p>
+        </article>
+        <article class="food-card"><span>03</span>
+          <h3>Amritsari Kulcha</h3>
+          <p>Stuffed Punjabi flatbread strongly associated with Amritsar.</p>
+        </article>
+        <article class="food-card"><span>04</span>
+          <h3>Lassi</h3>
+          <p>A refreshing yogurt-based drink popular across Punjab.</p>
+        </article>
+        <article class="food-card"><span>05</span>
+          <h3>Chole Bhature</h3>
+          <p>A popular North Indian combination of spiced chickpeas and fried bread.</p>
+        </article>
+        <article class="food-card"><span>06</span>
+          <h3>Punjabi Thali</h3>
+          <p>A spread bringing several traditional dishes and flavours together.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience">
+      <span class="eyebrow">KEEP TRADITIONS ALIVE</span>
+      <h2>Experience Punjab</h2>
+      <p>Discover its places. Learn its stories. Celebrate its culture.</p>
+      <a class="gold-btn" href="#places">Explore Places <span>→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">❧ VIRASYA</div>
+    <p>Digital Gateway to India's Heritage</p>
+    <p class="copyright">© 2026 VIRASYA • Punjab Heritage Experience</p>
+  </footer>
+
+  <div class="modal" id="placeModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">×</button>
+      <div class="modal-image" id="modalImage"></div>
+      <div class="modal-content">
+        <span class="mini-label" id="modalType"></span>
+        <h2 id="modalTitle"></h2>
+        <p class="modal-location" id="modalLocation"></p>
+        <p id="modalDescription"></p>
+        <div class="modal-facts" id="modalFacts"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="punjab.js"></script>
+</body>
+
+</html>

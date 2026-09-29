@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Virasya — Artisan Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/artisan.css">
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="brand">
+                <svg class="brand-mark" viewBox="0 0 48 48" fill="none">
+                    <path
+                        d="M14 20c0-6 4-11 10-11s10 5 10 11c0 5-3 7-3 12v3c0 2-2 3-4 3H21c-2 0-4-1-4-3v-3c0-5-3-7-3-12Z"
+                        stroke="#F3E7D8" stroke-width="2" />
+                    <path d="M17 41h14" stroke="#C99A3D" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <div>
+                    <div class="brand-name">Virasya</div>
+                    <div class="brand-sub">Artisan Partner Hub</div>
+                </div>
+            </div>
+            <nav>
+                <div class="nav-item active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                        <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                        <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                        <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                    </svg>Overview</div>
+                <div class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z" />
+                        <path d="M14 3v5h5M9 13h6M9 17h6" />
+                    </svg>Manage Documents</div>
+                <div class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2 4 5v6c0 5 3.4 8.7 8 9.9 4.6-1.2 8-4.9 8-9.9V5l-8-3Z" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg>Verification Proof</div>
+                <div class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 21c0-4 3.6-6 8-6s8 2 8 6" />
+                    </svg>Artisan Verification</div>
+                <div class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 8 12 3 3 8l9 5 9-5Z" />
+                        <path d="M3 8v8l9 5 9-5V8M12 13v8" />
+                    </svg>Product Control</div>
+                <div class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 3v18h18" />
+                        <path d="m7 15 4-5 3 3 5-7" />
+                    </svg>Sales Dashboard</div>
+                <div class="nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M21 11.5a8.4 8.4 0 0 1-9 8.4A8.6 8.6 0 0 1 7 18l-4 1 1-3.6a8.4 8.4 0 0 1 8-11.9 8.4 8.4 0 0 1 9 8Z" />
+                    </svg>Reviews &amp; Feedback</div>
+            </nav>
+            <div class="sidebar-foot">Handmade with care — every listing you manage here reaches buyers across India.
+            </div>
+        </aside>
+
+        <!-- MAIN -->
+        <main>
+            <!-- decorative traditional motifs -->
+            <svg class="bg-motif mandala" viewBox="0 0 300 200" fill="none">
+                <g stroke="#C99A3D" stroke-width="1.3">
+                    <path d="M150 10c-14 18-14 34 0 48 14-14 14-30 0-48Z" fill="#EFC469" />
+                    <path d="M110 20c-6 20-2 36 14 46-2-20-4-34-14-46Z" fill="#EFC469" />
+                    <path d="M190 20c6 20 2 36-14 46 2-20 4-34 14-46Z" fill="#EFC469" />
+                    <path d="M75 34c0 20 8 34 26 40-6-20-10-32-26-40Z" fill="#F3D98A" />
+                    <path d="M225 34c0 20-8 34-26 40 6-20 10-32 26-40Z" fill="#F3D98A" />
+                    <path d="M45 55c4 18 16 28 34 30-10-18-16-26-34-30Z" fill="#F3D98A" />
+                    <path d="M255 55c-4 18-16 28-34 30 10-18 16-26 34-30Z" fill="#F3D98A" />
+                    <path d="M150 58c-20 6-30 18-30 36 18-8 28-18 30-36Z" fill="#EFC469" />
+                    <path d="M150 58c20 6 30 18 30 36-18-8-28-18-30-36Z" fill="#EFC469" />
+                    <circle cx="150" cy="95" r="10" fill="#B5562D" />
+                    <g fill="#EFC469">
+                        <circle cx="150" cy="30" r="3" />
+                        <circle cx="95" cy="60" r="2.5" />
+                        <circle cx="205" cy="60" r="2.5" />
+                        <circle cx="60" cy="90" r="2.5" />
+                        <circle cx="240" cy="90" r="2.5" />
+                    </g>
+                </g>
+            </svg>
+            <svg class="bg-motif lotus" viewBox="0 0 200 130" fill="none" stroke="#D9AE4E" stroke-width="1.4">
+                <path d="M100 20c-8 12-8 26 0 36 8-10 8-24 0-36Z" />
+                <path d="M70 30c-4 14 0 26 10 34-2-14-2-26-10-34Z" />
+                <path d="M130 30c4 14 0 26-10 34 2-14 2-26 10-34Z" />
+                <path d="M45 46c0 14 6 24 20 30-4-14-8-24-20-30Z" />
+                <path d="M155 46c0 14-6 24-20 30 4-14 8-24 20-30Z" />
+                <path d="M25 66c10 10 24 14 40 12-10-12-20-18-40-12Z" />
+                <path d="M175 66c-10 10-24 14-40 12 10-12 20-18 40-12Z" />
+                <path d="M20 78c22-4 40 2 50 16-22 2-38-2-50-16Z" />
+                <path d="M180 78c-22-4-40 2-50 16 22 2 38-2 50-16Z" />
+            </svg>
+            <svg class="bg-motif pots" viewBox="0 0 200 220" fill="none">
+                <path d="M60 60c-16 0-28 12-28 30v50c0 18 12 30 28 30s28-12 28-30V90c0-18-12-30-28-30Z" stroke="#5B7FA6"
+                    stroke-width="2" />
+                <path d="M40 90h40M36 110h48M38 130h44" stroke="#5B7FA6" stroke-width="1.4" />
+                <path
+                    d="M130 20c6-6 14-8 22-6l-4 14c8 2 14 8 16 16l-14 4c4 10 2 22-6 30l-10-10c-6 8-16 12-26 10l2-14c-8-2-14-8-16-16l14-4c-4-10-2-22 6-30l16 6Z"
+                    fill="#B5562D" opacity=".9" />
+                <ellipse cx="140" cy="150" rx="34" ry="42" fill="#A9642F" />
+                <path d="M112 130c10 6 46 6 56 0M108 150c14 6 44 6 58 0M114 172c8 5 40 5 50 0" stroke="#7A4520"
+                    stroke-width="1.4" />
+            </svg>
+            <header class="top">
+                <div class="greet">
+                    <h1>Namaste, Meera Devi 🪔</h1>
+                    <p>Your Warli-print pottery collection is trending this week</p>
+                </div>
+                <div class="top-right">
+                    <div class="badge-pill">✦ 42 new orders this week</div>
+                    <div class="avatar">MD</div>
+                </div>
+            </header>
+
+            <!-- STATS -->
+            <section class="stats">
+                <div class="stat-card fill brown">
+                    <div class="stat-top"><span>Total Sales</span><span class="delta">↑ 18.4%</span></div>
+                    <div class="stat-num">₹3,76,454</div>
+                    <div class="stat-label">Gross this month</div>
+                </div>
+                <div class="stat-card fill clay">
+                    <div class="stat-top"><span>Orders</span><span class="delta">↑ 12.1%</span></div>
+                    <div class="stat-num">1,248</div>
+                    <div class="stat-label">Fulfilled &amp; in-progress</div>
+                </div>
+                <div class="stat-card light">
+                    <div class="stat-top"><span style="color:var(--muted)">Products Listed</span><span class="delta">+6
+                            new</span></div>
+                    <div class="stat-num">86</div>
+                    <div class="stat-label">Across 5 categories</div>
+                </div>
+                <div class="stat-card light">
+                    <div class="stat-top"><span style="color:var(--muted)">Avg. Rating</span><span class="delta">↑
+                            0.2</span></div>
+                    <div class="stat-num">4.8 / 5</div>
+                    <div class="stat-label">From 312 reviews</div>
+                </div>
+            </section>
+
+            <!-- ROW 1: chart + verification -->
+            <section class="row">
+                <div class="card">
+                    <div class="card-head">
+                        <h3>Sales vs. Orders</h3>
+                        <span class="tag">Last 6 months</span>
+                    </div>
+                    <div class="chart-wrap">
+                        <svg viewBox="0 0 560 170" preserveAspectRatio="none">
+                            <line x1="0" y1="30" x2="560" y2="30" stroke="#EEDFC9" stroke-width="1" />
+                            <line x1="0" y1="75" x2="560" y2="75" stroke="#EEDFC9" stroke-width="1" />
+                            <line x1="0" y1="120" x2="560" y2="120" stroke="#EEDFC9" stroke-width="1" />
+                            <line x1="0" y1="160" x2="560" y2="160" stroke="#EEDFC9" stroke-width="1" />
+                            <polyline points="10,110 100,90 190,120 280,55 370,75 460,35 550,50" fill="none"
+                                stroke="#B5562D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <polyline points="10,140 100,130 190,100 280,110 370,60 460,90 550,70" fill="none"
+                                stroke="#C99A3D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="460" cy="35" r="5" fill="#B5562D" />
+                        </svg>
+                        <div class="chart-legend">
+                            <span><span class="dot" style="background:#B5562D"></span>Sales Revenue</span>
+                            <span><span class="dot" style="background:#C99A3D"></span>Orders</span>
+                            <span style="margin-left:auto">Apr — Sep 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="position:relative;">
+                    <svg class="pot-deco" viewBox="0 0 64 64" fill="none">
+                        <path d="M22 10h20l-3 8c4 3 6 9 6 15 0 12-7 21-13 21s-13-9-13-21c0-6 2-12 6-15l-3-8Z"
+                            stroke="#B5562D" stroke-width="2" />
+                        <path d="M20 30c5 2 19 2 24 0M18 40c6 3 22 3 28 0" stroke="#C99A3D" stroke-width="1.4" />
+                    </svg>
+                    <div class="card-head">
+                        <h3>Artisan Verification</h3>
+                    </div>
+                    <div class="verif-status">
+                        <svg class="verif-ring" viewBox="0 0 64 64">
+                            <circle cx="32" cy="32" r="26" fill="none" stroke="rgba(255,243,227,.18)"
+                                stroke-width="7" />
+                            <circle cx="32" cy="32" r="26" fill="none" stroke="#EFC469" stroke-width="7"
+                                stroke-linecap="round" stroke-dasharray="163" stroke-dashoffset="41"
+                                transform="rotate(-90 32 32)" />
+                            <text x="32" y="37" text-anchor="middle" font-family="Fraunces, serif" font-size="15"
+                                font-weight="600" fill="#F6ECE0">75%</text>
+                        </svg>
+                        <div>
+                            <h4>Under Final Review</h4>
+                            <p>Craft board approval pending</p>
+                        </div>
+                    </div>
+                    <div class="steps">
+                        <div class="step done"><span class="num">✓</span> Documents submitted</div>
+                        <div class="step done"><span class="num">✓</span> Proof of craft uploaded</div>
+                        <div class="step"><span class="num">3</span> Verification call <span class="step-note">—
+                                scheduled Oct 2</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ROW 2: documents + product control -->
+            <section class="row">
+                <div class="card">
+                    <div class="card-head">
+                        <h3>Manage Documents &amp; Verification Proof</h3>
+                        <button class="btn">+ Upload new</button>
+                    </div>
+                    <div class="doc-list">
+                        <div class="doc-item">
+                            <div class="doc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z" />
+                                    <path d="M14 3v5h5" />
+                                </svg></div>
+                            <div style="flex:1">
+                                <div class="doc-name">Aadhaar &amp; GST Certificate</div>
+                                <div class="doc-sub">Uploaded Sep 12, 2026</div>
+                            </div>
+                            <span class="status-chip ok">Verified</span>
+                        </div>
+                        <div class="doc-item">
+                            <div class="doc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="14" rx="2" />
+                                    <path d="m3 8 9 6 9-6" />
+                                </svg></div>
+                            <div style="flex:1">
+                                <div class="doc-name">Craft Lineage Proof (Photos)</div>
+                                <div class="doc-sub">Terracotta workshop, Kutch</div>
+                            </div>
+                            <span class="status-chip ok">Verified</span>
+                        </div>
+                        <div class="doc-item">
+                            <div class="doc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 2 4 5v6c0 5 3.4 8.7 8 9.9 4.6-1.2 8-4.9 8-9.9V5l-8-3Z" />
+                                </svg></div>
+                            <div style="flex:1">
+                                <div class="doc-name">GI Tag / Craft Cluster ID</div>
+                                <div class="doc-sub">Awaiting board review</div>
+                            </div>
+                            <span class="status-chip pending">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-head">
+                        <h3>Product Control</h3>
+                        <span class="tag">86 live</span>
+                    </div>
+                    <div class="product-list">
+                        <div class="product-row">
+                            <div class="product-thumb" style="background:linear-gradient(135deg,#B5562D,#8C4322)"></div>
+                            <div style="flex:1">
+                                <div class="product-name">Blue Pottery Vase</div>
+                                <div class="product-sub">₹1,450 · Jaipur</div>
+                            </div>
+                            <div class="stock-bar">
+                                <div class="stock-fill" style="width:80%"></div>
+                            </div>
+                            <span class="status-chip ok">Active</span>
+                        </div>
+                        <div class="product-row">
+                            <div class="product-thumb" style="background:linear-gradient(135deg,#C99A3D,#8C4322)"></div>
+                            <div style="flex:1">
+                                <div class="product-name">Madhubani Wall Art</div>
+                                <div class="product-sub">₹2,200 · Bihar</div>
+                            </div>
+                            <div class="stock-bar">
+                                <div class="stock-fill" style="width:35%"></div>
+                            </div>
+                            <span class="status-chip pending">Low stock</span>
+                        </div>
+                        <div class="product-row">
+                            <div class="product-thumb" style="background:linear-gradient(135deg,#5A3825,#3E2417)"></div>
+                            <div style="flex:1">
+                                <div class="product-name">Warli Painted Diya Set</div>
+                                <div class="product-sub">₹650 · Maharashtra</div>
+                            </div>
+                            <div class="stock-bar">
+                                <div class="stock-fill" style="width:60%"></div>
+                            </div>
+                            <span class="status-chip ok">Active</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ROW 3: reviews -->
+            <section class="card">
+                <div class="card-head">
+                    <h3>Reviews &amp; Feedback</h3>
+                    <span class="tag">4.8 average · 312 reviews</span>
+                </div>
+                <div class="review">
+                    <div class="rev-avatar">RS</div>
+                    <div style="flex:1">
+                        <div style="display:flex;justify-content:space-between"><span class="rev-name">Riya
+                                Sharma</span><span class="rev-stars">★★★★★</span></div>
+                        <p class="rev-text">The blue pottery vase arrived beautifully packed, exactly like the photos.
+                            Loved the hand-painted detailing.</p>
+                        <span class="rev-reply">Reply to Riya →</span>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="rev-avatar">AK</div>
+                    <div style="flex:1">
+                        <div style="display:flex;justify-content:space-between"><span class="rev-name">Arjun
+                                Kapoor</span><span class="rev-stars">★★★★☆</span></div>
+                        <p class="rev-text">Gorgeous Madhubani piece, though delivery took a couple of days longer than
+                            expected.</p>
+                        <span class="rev-reply">Reply to Arjun →</span>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="rev-avatar">SN</div>
+                    <div style="flex:1">
+                        <div style="display:flex;justify-content:space-between"><span class="rev-name">Sana
+                                Nair</span><span class="rev-stars">★★★★★</span></div>
+                        <p class="rev-text">The diya set has become the centrepiece of our Diwali table. Will be
+                            ordering more for gifting.</p>
+                        <span class="rev-reply">Reply to Sana →</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
